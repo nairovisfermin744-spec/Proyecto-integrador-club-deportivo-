@@ -15,7 +15,7 @@ public sealed class FrmCobroCuota : Form
         Text = "Cobro de cuota";
         StartPosition = FormStartPosition.CenterParent;
         ClientSize = new Size(480, 260);
-        var t = new TableLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(16), ColumnCount = 2, RowCount = 5 };
+        var t = new TableLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(16), ColumnCount = 2, RowCount = 6 };
         t.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 34));
         t.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 66));
         t.Controls.Add(new Label { Text = "Documento:", AutoSize = true }, 0, 0);
@@ -34,7 +34,6 @@ public sealed class FrmCobroCuota : Form
         pagar.Click += Pagar;
         t.Controls.Add(pagar, 1, 5);
         Controls.Add(t);
-        t.RowCount = 6;
     }
 
     private void Buscar(object? sender, EventArgs e)
