@@ -6,7 +6,7 @@ Proyecto académico en C# Windows Forms y MySQL para administrar socios, cuotas 
 - Inicio de sesión.
 - Alta y consulta de socios.
 - Registro de pagos de cuotas.
-- Consulta de cuotas vencidas o próximas a vencer.
+- Consulta de cuotas vencidas hasta la fecha seleccionada.
 - Base de datos MySQL con script de creación.
 
 ## Requisitos
@@ -17,7 +17,7 @@ Proyecto académico en C# Windows Forms y MySQL para administrar socios, cuotas 
 
 ## Cómo ejecutar
 1. Crear la base de datos ejecutando `database/club_deportivo.sql` en MySQL.
-2. Abrir `CLUB_DEPORTIVO.sln` o el archivo `src/ClubDeportivo/ClubDeportivo.csproj` en Visual Studio.
+2. Abrir `ClubDeportivo.sln` o el archivo `src/ClubDeportivo/ClubDeportivo.csproj` en Visual Studio.
 3. Ajustar la cadena de conexión en `src/ClubDeportivo/Infraestructura/Conexion.cs`.
 4. Restaurar paquetes NuGet y ejecutar el proyecto.
 
@@ -25,7 +25,7 @@ Proyecto académico en C# Windows Forms y MySQL para administrar socios, cuotas 
 El script crea un usuario de demostración: **admin / admin123**. Cambiar la contraseña antes de usar datos reales.
 
 ## Estado de la entrega
-La estructura y el código se preparan para la consigna académica. Antes de entregar, es obligatorio compilar y probar en Visual Studio con una instancia real de MySQL. La conexión, el funcionamiento local y las capturas de pruebas no deben considerarse verificados hasta completar esos pasos.
+La estructura inicial y la documentación están cargadas en GitHub. **Todavía no debe considerarse una entrega final lista**: falta compilar y probar en Visual Studio con MySQL real, completar las pruebas observadas y terminar los módulos pendientes que se detallan en `docs/ANALISIS_Y_DISENO.md`.
 
 ## Estructura
 - `src/ClubDeportivo`: aplicación Windows Forms.
